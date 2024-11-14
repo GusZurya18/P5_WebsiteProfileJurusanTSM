@@ -1,0 +1,137 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f8f8f8;
+    font-family: Arial, sans-serif;
+}
+.container {
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 900px;
+    width: 100%;
+}
+.image-section {
+    flex: 1;
+    background: url('../AssetGambar/IMG_0324.jpg') no-repeat center center;
+    background-size: cover;
+}
+.form-section {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.form-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.form-section label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.form-section input[type="text"],
+.form-section input[type="email"],
+.form-section input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.form-section .options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.form-section .options input[type="checkbox"] {
+    margin-right: 5px;
+}
+.form-section .options a {
+    font-size: 14px;
+    color: #E92030;
+    text-decoration: none;
+}
+.form-section .options a:hover {
+    text-decoration: underline;
+}
+.form-section button {
+    width: 100%;
+    padding: 10px;
+    background-color: #E92030;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+   
+}
+.form-section .social-login {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.form-section .social-login button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.form-section .social-login button i {
+    margin-right: 10px;
+}
+.form-section .social-login .google {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #ccc;
+}
+.form-section .social-login .apple {
+    background-color: #000;
+    color: #fff;
+}
+.form-section .register {
+    text-align: center;
+    font-size: 14px;
+}
+.form-section .register a {
+    color: #E92030;
+    text-decoration: none;
+}
+.form-section .register a:hover {
+    text-decoration: underline;
+}
+.social-divider {
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+}
+
+.social-divider::before,.social-divider::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 45%;
+    height: 1px;
+    background-color: #ccc;
+}
+
+.social-divider::before {
+    left: 0;
+}
+
+.social-divider::after {
+    right: 0;
+}

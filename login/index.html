@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="image-section"></div>
+        <form class="form-section" action="../homepage/index.html">
+            <h1>Welcome Back!</h1>
+            <label for="username">Email/Username</label>
+            <input type="text" id="username" placeholder="Email/Username" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Password" required>
+            <div class="options">
+                <div>
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Remember me</label>
+                </div>
+                <a href="#">Forgot Password?</a>
+            </div>
+            <button onclick="changeLogin()" type="submit">Sign In</button>
+            <div class="social-divider">
+                <span> or </span>
+            </div>
+            <div class="social-login">
+                <button class="google"><img src="../AssetIcon/Google Logo.svg" alt=""><i class="fab fa-google"></i> Continue with Google</button>
+                <button class="apple"><img src="../AssetIcon/Apple Logo.svg" alt=""><i class="fab fa-apple"></i> Continue with Apple</button>
+            </div>
+            <div class="register">
+                Don't Have an account? <a href="../register/index.html">Register</a>
+            </div>
+        </form>
+    </div>
+    <script src="/logout.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        backdrop-filter: blur(8.5px);
+    }
+
+    .modal-content {
+        background-color: var(--white-color);
+        margin: 15% auto; /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 314px; /* Could be more or less, depending on screen size */
+        text-align: center; /* Center text */
+    }
+
+.modal button {
+    margin: 10px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.modal-content h2{
+    color: var(--main-color);
+    font-size: 26px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.modal-content p{
+    font-size: 10px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.modal button#confirm-logout {
+    background-color: var(--main-color); /* Main color */
+    color: var(--white-color);
+}
+
+.modal button#cancel-logout {
+    background-color: #C1C1C1; /* Gray color for cancel */
+    color: var(--white-color);
+}
+.modal button#confirm-logout, .modal button#cancel-logout{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 15px;
+}

@@ -1,0 +1,130 @@
+:root {
+    --main-color: #E92030;
+    --white-color: #fff; 
+    --font-family: 'Quicksand', sans-serif;
+}
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #FBFAF5;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: var(--main-color);
+    flex-direction: row;
+    gap: 30px;
+    
+}
+.navbar text{
+    font-family: var(--font-family1);
+    font-size: 30px;
+    font-weight: 700;
+}
+.navbar .spacer{
+    display: flex;
+    flex-direction: row;
+    gap: 900px;    
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+.navbar .nav-links a {
+    font-family: var(--font-family1);
+    text-decoration: none;
+    color: var(--white-color);
+    margin: 0 15px;
+    font-weight: 500;
+}
+.navbar a:hover {
+    color: #C2C2C2;
+}
+.logo{
+    font-weight: bold;
+    font-size: 20px;
+}
+.logout-link {
+    display: flex;
+    align-items: center;
+    margin-left: 15px; 
+}
+
+.logout-image {
+    width: 30px; 
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.logout-image:hover {
+    transform: scale(1.1); 
+}
+.hero {
+    position: relative;
+    text-align: left;
+    color: var(--white-color);
+    background-image: url('../asset/Gambar Wisuda.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 130px 30px;
+    height: 30vh; 
+    display: flex;
+    justify-content: center;
+}
+.container {
+    max-width: 800px;
+    margin: 121px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+thead {
+    background-color: #E92030;
+    color: #ffffff;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+th {
+    font-weight: 600;
+}
+
+td {
+    color: #555;
+}

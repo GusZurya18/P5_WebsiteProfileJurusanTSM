@@ -1,0 +1,146 @@
+:root{
+    --main-color: #E92030;
+    --white-color: #fff;
+    --font-family: 'Quicksand', sans-serif;
+    --font-family1: 'Roboto', sans-serif;
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    background-color: rgb(247, 247, 247);
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: var(--main-color);
+    flex-direction: row;
+    gap: 30px;
+    
+}
+.navbar text{
+    font-family: var(--font-family1);
+    font-size: 30px;
+    font-weight: 700;
+}
+.navbar .spacer{
+    display: flex;
+    flex-direction: row;
+    gap: 900px;    
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+.navbar a {
+    font-family: var(--font-family1);
+    text-decoration: none;
+    color: var(--white-color);
+    margin: 0 15px;
+    font-weight: 500;
+}
+.navbar a:hover {
+    color: #000;
+}
+.logo{
+    font-weight: bold;
+    font-size: 20px;
+}
+.logout-link {
+    display: flex;
+    align-items: center;
+    margin-left: 15px; 
+}
+
+.logout-image {
+    width: 30px; 
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.logout-image:hover {
+    transform: scale(1.1); 
+}
+
+h1{
+    color: var(--red);
+    text-align: center;
+    margin: 0;
+    margin-top: 12px;
+}
+
+.content{
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%; /* Lebar container sesuai kebutuhan */
+    height: 645px;
+    overflow: hidden; /* Sembunyikan bagian gambar yang melampaui container */
+    gap: 25px;
+    padding: 30px 0;
+    margin: 191px auto;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.guru img {
+  max-width: 202px; /* Membatasi gambar agar tidak melebihi lebar container */
+  height: 100%; /* Menjaga proporsi gambar */
+  object-fit: cover;    
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
+
+.guru{
+    height: 250px;
+    border: 1px solid white;
+    position: relative;
+    transition: .25s ease-out;
+}
+
+.detail-guru{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.599);
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.detail-guru p{
+    margin-left: 7px;
+}
+
+.nama-guru{
+    margin: 0;
+    margin-top: 5px;
+}
+
+.kode-guru{
+    font-size: 12px;
+    font-weight: 300;
+    margin: 0;
+    margin-top: 2px;
+}
+.guru:hover {
+    transform: scale(1.1);
+}

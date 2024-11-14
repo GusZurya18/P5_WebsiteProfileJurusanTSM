@@ -1,0 +1,167 @@
+:root{
+    --main-color: #E92030;
+    --white-color: #fff;
+    --font-family: 'Quicksand', sans-serif;
+    --font-family1: 'Roboto', sans-serif;
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    background-color: rgb(247, 247, 247);
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: var(--main-color);
+    flex-direction: row;
+    gap: 30px;
+    
+}
+.navbar text{
+    font-family: var(--font-family1);
+    font-size: 30px;
+    font-weight: 700;
+}
+.navbar .spacer{
+    display: flex;
+    flex-direction: row;
+    gap: 900px;    
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+.navbar a {
+    font-family: var(--font-family1);
+    text-decoration: none;
+    color: var(--white-color);
+    margin: 0 15px;
+    font-weight: 500;
+}
+.navbar a:hover {
+    color: #000;
+}
+.logo{
+    font-weight: bold;
+    font-size: 20px;
+}
+.logout-link {
+    display: flex;
+    align-items: center;
+    margin-left: 15px; 
+}
+
+.logout-image {
+    width: 30px; 
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.logout-image:hover {
+    transform: scale(1.1); 
+}
+
+h1{
+    color: var(--red);
+    text-align: center;
+    margin: 21px 0;
+    margin-bottom: 18px;
+}
+
+.container{
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 60%; /* Lebar container sesuai kebutuhan */
+    overflow: hidden; /* Sembunyikan bagian gambar yang melampaui container */
+    gap: 25px;
+    padding: 30px 0;
+    margin: 191px auto;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.column{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 480px;
+    font-size: 32px;
+    gap: 20px 15px;
+}
+
+.box{
+    height: 170px;
+    width: 170px;
+    background-color: #E92030;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px rgba(5, 0 , 0, 0.2);
+}
+
+.inner {
+    position: relative;
+    inset: 0px;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: inherit;
+    transition: .25s ease-out;
+}
+
+.inner:hover {
+    transform: translateY(-10px);
+}
+
+.inner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(-65deg, #0000 40%, #fff7 50%, #0000 70%);
+    background-size: 200% 100%;
+    background-repeat: no-repeat;
+    animation: thing 3s ease infinite;
+  }
+
+@keyframes thing {
+    0% {
+      background-position: 130%;
+      opacity: 1;
+    }
+  
+    to {
+      background-position: -166%;
+      opacity: 0;
+    }
+  }
+
+a{
+    text-decoration: none;
+    color: inherit;
+}

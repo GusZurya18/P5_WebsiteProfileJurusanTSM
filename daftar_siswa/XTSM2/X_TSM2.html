@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Siswa TKR</title>
+    <link href="../../logout.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+          <div class="spacer">
+            <div class="logo">
+              <img src="../../AssetIcon/Logo Skensa TSM.svg">
+            </div>
+    
+            <nav class="nav-links">
+              <a href="../../homepage/index.html">Home</a>
+              <a href="../../daftar_guru/index.html">Daftar Guru</a>
+              <a href="../../daftar_kelas/index.html">Daftar Kelas</a>
+              <a href="../../homepage/index.html#section">Fasilitas</a>
+              <a href="../../homepage/index.html#section">Agenda</a>
+            </nav> 
+          </div>
+              <a href="#" class="logout-link" id="logout-link">
+                <img src="../../AssetIcon/Log Out Button.svg" alt="Log Out" class="logout-image">
+              </a>
+          </div>
+        </header>
+
+        <div id="logout-modal" class="modal">
+          <div class="modal-content">
+              <h2>Logout Akun?</h2>
+              <p>Jika anda keluar dari akun maka anda harus<br>melakukan login ulang.</p>
+              <button id="cancel-logout">Tidak</button>
+              <button id="confirm-logout">Ya</button>
+          </div>
+      </div>
+
+        <div class="container">
+          <h1>Data Siswa Teknik Sepeda Motor (X TSM 2)</h1>
+          <div id="table-container"></div>
+      </div>
+      <script src="script.js"></script>
+      <script src="../../logout.js"></script>
+</body>
+</html>

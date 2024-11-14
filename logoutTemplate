@@ -1,0 +1,10 @@
+<div id="logout-modal" class="modal">
+    <div class="modal-content">
+        <h2>Logout Akun?</h2>
+        <p>Jika anda keluar dari akun maka anda harus<br>melakukan login ulang.</p>
+        <button id="cancel-logout">Tidak</button>
+        <button id="confirm-logout">Ya</button>
+    </div>
+</div>
+
+id="logout-link"

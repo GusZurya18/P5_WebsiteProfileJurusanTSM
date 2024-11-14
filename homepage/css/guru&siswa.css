@@ -1,0 +1,150 @@
+.Guru{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 32px 0;
+}
+.Guru h3{
+    color: var(--main-color);
+    font-family: var(--font-family);
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0;
+}
+.Guru .lainnya{
+    display: flex;
+    width: 47%;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.Guru .lainnya p{
+    color: var(--main-color);
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: 600;   
+    padding: 0 5px; 
+}
+.Guru .img-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 202px);
+    height: 278px;
+    gap:20px;
+    
+}
+.img-grid .container1{
+    background-image: url('../../AssetGambar/Triatha.png');
+    width: 100%; 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    justify-content: flex-end;
+}
+.img-grid .container2{
+    background-image: url('../../AssetGambar/Anak\ Agung\ Putu\ Ananta.png');
+    width: 100%; 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    justify-content: flex-end;
+}
+.img-grid .container3{
+    background-image: url('../../AssetGambar/Gusti\ lanang.png');
+    width: 100%; 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;    
+    justify-content: flex-end;
+}
+.img-grid .container4{
+    background-image: url('../../AssetGambar/nyoman\ mudana.png');
+    width: 100%; 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    justify-content: flex-end;
+} 
+.img-grid .content{
+    display: flex;
+    width: 100%;
+    height: 30%;
+    z-index: 1;
+    backdrop-filter: blur(4px);
+    background-color: #383838B8;
+    ;
+    filter: saturate(175%);
+}
+.img-grid .desc{
+    padding: 10px 0;
+}
+.Siswa{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 32px 0;
+}
+.Siswa h3{
+    color: var(--main-color);
+    font-family: var(--font-family);
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0;
+}
+.Siswa .lainnya{
+    display: flex;
+    width: 47%;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.Siswa .lainnya .link p{
+    color: var(--main-color);
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: 600;   
+    padding: 0 5px; 
+}
+.Siswa .grid{
+    display: grid;
+    grid-template-columns: repeat(4, 202px);
+    height: 182px;
+    gap:20px;
+    
+}
+.lainnya .link{
+    display: flex;
+    flex-direction: row;
+}
+.Siswa .grid .container1,
+.Siswa .grid .container2,
+.Siswa .grid .container3,
+.Siswa .grid .container4
+{
+    background-color: var(--main-color);
+    width: 100%; 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    justify-content: center;
+}
+.Siswa .desc{
+    font-size: 50px;
+    text-align: center;
+}

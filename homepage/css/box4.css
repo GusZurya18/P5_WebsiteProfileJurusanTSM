@@ -1,0 +1,76 @@
+.box-4{
+    display: grid;
+    grid-template-columns: repeat(4, 303px); /* Adjust the number of columns */
+    gap: 10px; 
+    max-width: 1248px;
+    width: 100%;
+    margin: 15px auto;
+}
+.box-4 h3{
+    color: var(--main-color);
+    font-family: var(--font-family);
+    font-weight: bold;
+}
+.box-4 .wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    flex: 1;
+}
+.box-4 .content{
+    padding-bottom: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+.box-4 .content .content-img{
+    width: 100%;
+    max-height: 200px;
+    height: 100%;
+    object-fit: cover; 
+    display: block; /* Prevents bottom space */
+}
+.box-4 .content .content-wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+}
+.box-4 .content .content-desc{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 20px 0;
+    padding-bottom: 5px;
+}
+.content .p-box{
+    margin: 10px auto;
+    width: 70px;
+    padding: 5px 10px;
+}
+.content-desc img{
+    max-width: 100px;
+    width: 100%;
+    max-height: 53px;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+.content-desc .desc-text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.desc-text .date{
+    color: #565656;
+}
+.desc-text .desc{
+    color: black;
+    font-weight: 700;
+}
