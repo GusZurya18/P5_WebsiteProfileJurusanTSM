@@ -45,7 +45,7 @@ cancelLogout.onclick = function () {
 
 // When the user clicks on the confirm button, redirect to the logout URL
 confirmLogout.onclick = function () {
-    window.location.href = "../../../login/index.html"; // Replace with your actual logout URL
+    window.location.href = "index.html"; // Replace with your actual logout URL
 }
 
 // When the user clicks anywhere outside of the modal, close it
